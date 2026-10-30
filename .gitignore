@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories
+.vscode/
+.idea/
+
+# Node (if any tooling added later)
+node_modules/
+
+# Temp files
+*.tmp
+*.log
+
+# Keep the original PDF in project root (not needed in deploy)
+GovindG.pdf
+profilepic.jpeg
