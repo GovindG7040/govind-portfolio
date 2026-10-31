@@ -1,129 +1,128 @@
-# Govind G — Personal Developer Portfolio
+# Govind G — AI Engineer · Generative AI Developer · Python Developer
 
-A personal portfolio website built as a faithful recreation of a reference design, personalized with my own content, projects, and professional information.
+A modern, responsive personal portfolio website showcasing my work as an AI Engineer specializing in Generative AI, Conversational AI systems, RAG pipelines, and Python backend development.
 
-**Live Site:** https://govindg7040.github.io/govind-portfolio
-
----
-
-## About
-
-This portfolio showcases my background as an AI Engineer, Generative AI Developer, and Python Developer. It includes my professional experience, technical skills, featured projects, education, and contact information.
+**🌐 Live Site:** https://govindg7040.github.io/govind-portfolio
 
 ---
 
-## Project Structure
+## 👨‍💻 About Me
+
+I'm a recent **Master of Computer Applications (MCA)** graduate with hands-on experience as an **AI Engineer Trainee at KiksAR Technologies Pvt. Ltd., Bengaluru**. My work involves building conversational WhatsApp agents, Retrieval-Augmented Generation (RAG) systems, and AI-powered applications using Python, Gemini 2.5 Flash, LangChain, and FastAPI.
+
+I'm passionate about **Generative AI, LLM-powered applications, Agentic AI, and Python backend engineering** — combining these to build practical, scalable solutions for real-world problems.
+
+---
+
+## ✨ Portfolio Highlights
+
+- 🤖 **Conversational AI** — WhatsApp agents with prompt engineering, tool routing & state management
+- 🔍 **Hybrid RAG Systems** — Dense + BM25 retrieval with CrossEncoder reranking and conversational memory
+- 🏏 **Cricket Shot Detection** — Human pose estimation + deep learning classifier using Detectron2 & PyTorch
+- 🐍 **Python Backend** — FastAPI, Django, Google Sheets integration, REST APIs
+
+---
+
+## 🗂️ Project Structure
 
 ```
 govind-portfolio/
-├── index.html              ← Main HTML file
+├── index.html              ← Main HTML (single-page)
 ├── css/
-│   └── style.css           ← All styles
+│   └── style.css           ← Custom design system with CSS variables
 ├── js/
-│   └── script.js           ← Scroll reveal, nav, contact form
+│   └── script.js           ← Scroll reveal, nav, contact form logic
 ├── assets/
 │   ├── profile.jpg         ← Profile photograph
-│   └── Govind_G_Resume.pdf ← Resume PDF
+│   └── Govind_G_Resume.pdf ← Downloadable resume
+├── favicon.ico             ← Custom favicon
+├── .nojekyll               ← GitHub Pages static site flag
 └── README.md
 ```
 
 ---
 
-## Running Locally
+## 🛠️ Tech Stack
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/GovindG7040/govind-portfolio.git
-   cd govind-portfolio
-   ```
-
-2. Open `index.html` in your browser directly, or use a local server:
-   ```bash
-   # Using Python
-   python -m http.server 8000
-   # Then open: http://localhost:8000
-   ```
+| Layer | Technologies |
+|-------|-------------|
+| Structure | HTML5 (Semantic) |
+| Styling | CSS3, CSS Custom Properties, Bootstrap 5.3 |
+| Scripting | Vanilla JavaScript (ES6+) |
+| Fonts | Google Fonts — Inter |
+| Hosting | GitHub Pages |
 
 ---
 
-## How to Update Content
+## 📂 Sections
 
-### Replace Profile Picture
-- Replace `assets/profile.jpg` with your new photograph.
-- Keep the same filename (`profile.jpg`), or update the `src` in `index.html`:
-  ```html
-  <img src="assets/your-new-photo.jpg" alt="Portrait of Govind G" />
-  ```
-
-### Replace Resume
-- Replace `assets/Govind_G_Resume.pdf` with your updated PDF.
-- Keep the same filename, or update the `href` in `index.html`:
-  ```html
-  <a href="assets/Your_New_Resume.pdf" target="_blank" download>Download Resume</a>
-  ```
-
-### Update Personal Information
-- Edit `index.html` directly.
-- Search for the section you want to change (e.g., `#about`, `#experience`, `#contact`).
-- Update the text content.
-
-### Update Project Links
-- In `index.html`, find the project card for the project you want to update.
-- Change the `href` attribute on the GitHub button:
-  ```html
-  <a href="https://github.com/GovindG7040/your-repo" target="_blank">GitHub</a>
-  ```
-
-### Update Contact Information
-- In `index.html`, update the contact links section:
-  ```html
-  <a href="mailto:your-email@example.com">your-email@example.com</a>
-  <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a>
-  ```
-- In `js/script.js`, update the mailto address on line with `ggovind164@gmail.com`.
+| # | Section | Description |
+|---|---------|-------------|
+| 1 | **Hero** | Introduction, profile photo, CTA buttons, social links |
+| 2 | **Professional Snapshot** | Five key competency areas |
+| 3 | **About** | Background, interests, and career focus |
+| 4 | **Experience** | AI Engineer Trainee @ KiksAR Technologies |
+| 5 | **Skills** | Programming, AI/ML, frameworks, databases, tools |
+| 6 | **Featured Projects** | Hybrid RAG Assistant & Cricket Shot Detection |
+| 7 | **Work Highlight** | Deep dive into the RAG pipeline architecture |
+| 8 | **Current Focus** | Active technical learning directions |
+| 9 | **Education** | MCA, BCA, Diploma credentials |
+| 10 | **Career Interests** | Target roles in AI & Python development |
+| 11 | **Contact** | Email, phone, LinkedIn, GitHub, and contact form |
 
 ---
 
-## Deployment (GitHub Pages)
+## 🚀 Running Locally
 
-1. Push all files to the `main` branch of your GitHub repository.
+```bash
+# Clone the repository
+git clone https://github.com/GovindG7040/govind-portfolio.git
+cd govind-portfolio
+
+# Serve with Python (recommended)
+python -m http.server 8000
+# Then open: http://localhost:8000
+```
+
+---
+
+## 🔧 How to Update Content
+
+### Profile Picture
+Replace `assets/profile.jpg` with your photo (keep the same filename).
+
+### Resume
+Replace `assets/Govind_G_Resume.pdf` with your updated PDF.
+
+### Personal Info / Projects / Contact
+Edit `index.html` directly — search for the relevant section (`#about`, `#experience`, `#projects`, `#contact`) and update the text.
+
+### Contact Email
+Update the `mailto:` in `js/script.js` (line with `ggovind164@gmail.com`).
+
+---
+
+## 📦 Deployment (GitHub Pages)
+
+1. Push all files to the `main` branch.
 2. Go to **Settings → Pages** in your repository.
 3. Under **Source**, select **Deploy from a branch**.
-4. Select **main** branch and **/ (root)** folder.
-5. Click **Save**.
-6. Your site will be live at: `https://yourusername.github.io/govind-portfolio`
-
-> **Note:** It may take 1–5 minutes for GitHub Pages to deploy after pushing.
+4. Select **main** branch → **/ (root)** folder → Click **Save**.
+5. Live in 1–5 minutes at: `https://govindg7040.github.io/govind-portfolio`
 
 ---
 
-## Technologies Used
+## 📬 Contact
 
-- **HTML5** — Semantic structure
-- **CSS3** — Custom design system with CSS variables
-- **JavaScript (ES6+)** — Scroll animations, nav, form handling
-- **Bootstrap 5.3** — Grid, responsive utilities, navbar
-- **Google Fonts** — Inter typeface
-- **GitHub Pages** — Static site hosting
-
----
-
-## Sections
-
-1. **Hero** — Name, title, introduction, profile photo, CTA buttons
-2. **Professional Snapshot** — Five key competency cards
-3. **About Me** — Background and professional interests
-4. **Experience** — AI Engineer Trainee at KiksAR Technologies
-5. **Technical Skills** — Organized skill groups with badges
-6. **Featured Projects** — RAG Assistant and Cricket Shot Detection
-7. **Work Highlight** — Deep dive into the RAG pipeline architecture
-8. **Current Focus** — Active learning and development areas
-9. **Education** — MCA, BCA, Diploma credentials
-10. **Career Interests** — Target roles
-11. **Contact** — Email, phone, LinkedIn, GitHub, and contact form
+| Channel | Details |
+|---------|---------|
+| 📧 Email | ggovind164@gmail.com |
+| 📞 Phone | +91 7559817144 |
+| 💼 LinkedIn | [govind-g-789761ba](https://www.linkedin.com/in/govind-g-789761ba) |
+| 🐙 GitHub | [GovindG7040](https://github.com/GovindG7040) |
 
 ---
 
-## License
+## 📄 License
 
-This portfolio is for personal use. The code structure is adapted from a reference design for educational purposes.
+This portfolio is for personal use. All content, project descriptions, and professional information belong to Govind G.
